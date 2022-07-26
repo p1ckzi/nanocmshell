@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 # exploit title: nanocmshell
+# data: 2022-07-26
 # author: p1ckzi
 #         github: https://github.com/p1ckzi
 #         twitter: @p1ckzi
 # vendor home: https://github.com/kalyan02/NanoCMS
 # vulnerable software and version: NanoCMS v0.4
-# tested on: Linux Mint 20.3.
+# tested on: Linux Mint 20.3
 # cve: n/a
 #
 # description:
