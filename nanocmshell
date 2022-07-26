@@ -18,7 +18,6 @@ import argparse
 import bs4
 import collections
 import errno
-import json
 import re
 import requests
 import secrets
