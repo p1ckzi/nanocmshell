@@ -2,7 +2,7 @@
 a simple script that exploits an authenticated file upload/remote code execution vulnerability in NanoCMS v0.4.  
 
 ## the exploit ❗
-https://github.com/kalyan02/NanoCMS has not been maintained in a long time and suffers from a a number of vulnerabilities including unauthenticated file upload and remote code execution which this script exploits.  
+https://github.com/kalyan02/NanoCMS has not been maintained in a long time and suffers from a a number of vulnerabilities including authenticated file upload/remote code execution which this script exploits.  
 More information here: https://github.com/ishell/Exploits-Archives/blob/master/2009-exploits/0904-exploits/nanocms-multi.txt  
 NanoCMS saves pages both new and edited, as .php files by default, allowing an authenticated attacker to upload executable code.  
 this script uploads a webshell.
