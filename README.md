@@ -46,3 +46,11 @@ examples:
         python3 nanocmshellv2.py http://hostname:8080 rev-shell.php -a
         ./nanocmshellv2.py https://10.10.10.10 rev-shell -n -e -u 'user'
 ```
+note: admin/demo are default credentials used but new ones can be supplied with `-u` and `-p` flags.
+
+## notes 📝
+the script was mainly an exercise in creating a short, comprehensive, self-contained program for a single exploit with both readability and accessibility in mind.  
+aims to handle a number of potential errors to help troubleshooting easier.
+
+## credits 👍
+https://skerritt.blog/a11y/ - accessibility implementation.
