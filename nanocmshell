@@ -11,13 +11,12 @@
 # description:
 # this script uploads a php reverse shell to the target.
 # NanoCMS does not sanitise the data of an authenticated user while creating
-# webpages. pages are save with .php extensions by default, allowing an
+# webpages. pages are saved with .php extensions by default, allowing an
 # authenticated attacker access to the underlying system:
 # https://github.com/ishell/Exploits-Archives/blob/master/2009-exploits/0904-exploits/nanocms-multi.txt
 
 import argparse
 import bs4
-import collections
 import errno
 import re
 import requests
