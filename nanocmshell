@@ -4,8 +4,8 @@
 #         github: https://github.com/p1ckzi
 #         twitter: @p1ckzi
 # vendor home: https://github.com/kalyan02/NanoCMS
-# vulnerable software and version: NanoCMS (version n/a)
-# tested on: Windows 10.
+# vulnerable software and version: NanoCMS v0.4
+# tested on: Linux Mint 20.3.
 # cve: ?
 #
 # description:
@@ -28,7 +28,7 @@ def arguments():
     parser = argparse.ArgumentParser(
         formatter_class=argparse.RawDescriptionHelpFormatter,
         description=f"{sys.argv[0]} exploits authenticated file upload"
-        "\nand remote code execution in NanoCMS.",
+        "\nand remote code execution in NanoCMS v0.4",
         epilog=f"examples:"
         f"\n\tpython3 {sys.argv[0]} http://10.10.10.10/ rev.php"
         f"\n\tpython3 {sys.argv[0]} http://hostname:8080 rev-shell.php -a"
