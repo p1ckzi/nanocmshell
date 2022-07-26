@@ -50,7 +50,8 @@ note: admin/demo are default credentials used but new ones can be supplied with 
 
 ## notes 📝
 the script was mainly an exercise in creating a comprehensive program for a single exploit with both readability and accessibility in mind.  
-aims to handle a number of potential errors to make troubleshooting easier.
+aims to handle a number of potential errors to make troubleshooting easier.  
+probably unlikely to see this in the wild, but maybe useful for CTFs.
 
 ## credits 👍
 https://skerritt.blog/a11y/ - accessibility implementation.
