@@ -23,7 +23,7 @@ use `./nanocmshell` or `python3 nanocmshell` with `-h` or `--help` for help menu
 ```
 usage: nanocmshell [-h] [-u USER] [-p PASSWD] [-e] [-a] [-n] address file
 
-../nanocmshellv2.py exploits authenticated file upload
+../nanocmshell exploits authenticated file upload
 and remote code execution in NanoCMS.
 
 positional arguments:
